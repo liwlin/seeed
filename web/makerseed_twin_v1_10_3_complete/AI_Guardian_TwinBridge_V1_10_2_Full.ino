@@ -1,3 +1,8 @@
+/* SPDX-License-Identifier: GPL-3.0-only
+ * MakerSeed Twin Bridge. This complete firmware is distributed under GPL-3.0-only
+ * because the current build depends on Seeed_Arduino_SPA06 (GPLv3).
+ * See ../../LICENSE.md and ../../THIRD_PARTY_NOTICES.md where applicable.
+ */
 /*
   AI 碉楼守护者 · Twin Bridge V1.10.2 Full
   Grove Beginner Kit for Arduino / Seeeduino Lotus
