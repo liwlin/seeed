@@ -20,11 +20,21 @@
 
 [下载截图原图](AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png) · [稳定版工具与启动说明](web/makerseed_twin_v1_10_3_complete/README.md) · [网页源码](web/makerseed_twin_v1_10_3_complete/standalone.html)
 
+## 5 分钟开始
+
+1. 准备一块 Grove Beginner Kit for Arduino；已烧录 V1.10.2 Twin Bridge 的板子可直接使用。
+2. 新板烧录 `web/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`。
+3. 关闭 Arduino 串口监视器，双击 `start_server.bat`。
+4. 使用桌面 Chrome / Edge 打开 `http://127.0.0.1:8080/standalone.html`。
+5. 点击“连接真实开发板”，选择对应 COM 口，先验证一项真实输入，再验证一个实体输出。
+
+没有开发板时仍可浏览 3D 模型和硬件工作原理；**真实输入、环境传感器和实体输出验收必须使用真板**。
+
 ## 三部分课程架构
 
 ### Part 1：数字孪生实验室（已经完成）
 
-真实硬件 ⇄ Web实时交互，认识全部硬件。3D仿真板卡，输入只能操作真板，输出由网页反控实物，加速度通过3D小窗帮助理解姿态。
+真实硬件 ⇄ Web 实时交互，认识全部硬件。3D 仿真板卡中，输入以真板操作为证据，输出由网页反控实物；LIS3DHTR 持续显示真实 XYZ，并可选择把**实体板的重力倾斜同步到整块 3D 板卡**。该功能只表示倾斜，不宣称 Yaw 航向跟踪。
 
 ### Part 2：CodeCraft AI 编程主线（开发中...）
 
@@ -45,7 +55,17 @@ Web实时交互重新回来。课程方预制Controller Lab、Game Engine和4个
 
 Web工具请下载或克隆到本地，按随包说明运行 `start_server.bat`，再用桌面 Chrome / Edge 打开本地页面。GitHub文件预览用于阅读源码，不是课程交互网页的运行入口。网页与固件须使用兼容版本；课程截图不能代替真实板课堂验收。
 
-V1.10.3是当前稳定版工具。实际课堂需核对真实输入、实体输出和设备交接；三轴加速度计不能单独确定航向。
+V1.10.3 是当前稳定版工具。实际课堂需核对真实输入、实体输出和设备交接；三轴加速度计不能单独确定航向。
+
+## 许可与来源
+
+- 课程与教学材料：**CC BY 4.0**
+- MakerSeed Web 与测试脚本：**MIT**
+- Arduino Twin Bridge：**GPL-3.0-only**（当前依赖 GPLv3 的 Seeed Arduino SPA06）
+- 课程来源与修改说明：[ATTRIBUTION.md](ATTRIBUTION.md)
+- 完整许可：[LICENSE.md](LICENSE.md)
+- 第三方软件、图片、商标来源：[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+- v0.01 发布说明：[RELEASE_NOTES_v0.01.md](RELEASE_NOTES_v0.01.md)
 
 ## 仓库内容
 

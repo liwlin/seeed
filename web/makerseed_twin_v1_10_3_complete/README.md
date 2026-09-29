@@ -156,6 +156,15 @@ OEND → ACK
 
 单块超时最多重试 3 次；OLED 会话期间暂停状态上报和环境 I²C 采样，避免 AVR 串口缓冲与 I²C 总线拥塞。
 
+## 许可与来源
+
+- MakerSeed 自研 Web / 测试脚本：MIT
+- Arduino Twin Bridge：GPL-3.0-only
+- 课程内容与说明文档：CC BY 4.0
+- 根许可：[../../LICENSE.md](../../LICENSE.md)
+- 课程来源：[../../ATTRIBUTION.md](../../ATTRIBUTION.md)
+- 第三方依赖：[../../THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)
+
 ## 测试边界
 
 - 自动测试可以验证数学算法、Web Serial 模拟协议、OLED 重试和网页 DOM 交互。

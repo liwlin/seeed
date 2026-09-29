@@ -20,7 +20,7 @@
 
 ## 三部分课程架构
 
-**Part 1：数字孪生实验室**——真实硬件 ⇄ Web实时交互，认识全部硬件；保留2D同构板卡、输入只能动真板、输出反控实物、加速度3D小窗。
+**Part 1：数字孪生实验室**——真实硬件 ⇄ Web 实时交互，认识全部硬件；3D 板卡用于空间定位，输入以真板操作为证据、输出反控实物；LIS3DHTR 显示真实 XYZ，并可选择将实体板的重力倾斜同步到整块 3D 板卡。
 
 **Part 2：CodeCraft AI 编程主线**——Mission Center只提供碉楼故事、任务和要求，不连接硬件；学员通过CodeCraft AI完成OLED、LED、蜂鸣器、光线、声音、按键、旋钮、温湿度、气压、加速度等编程学习。
 
@@ -46,3 +46,7 @@ Part2、Part3在版本管理中仅保留空的`.gitkeep`，本地草稿保留但
 正式授课前按教师讲义核对真板输入、实体输出与设备交接。网页截图和课程文档不能代替实板验收。
 
 内部方案、开发记录与制作数据仅保留本地，不随课程材料发布。
+
+## 来源与许可
+
+本课程改编自《柴火创客学园 M0 · 零基础智能硬件入门》（https://github.com/mouseart2025/courses-M0，CC BY 4.0）。本版本由 MakerSeed / 种子创客工坊进行了主题、课程结构、教学活动与数字孪生工具等修改。完整署名见 [ATTRIBUTION.md](../ATTRIBUTION.md)，许可与第三方说明见 [LICENSE.md](../LICENSE.md) 与 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。
