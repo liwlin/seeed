@@ -2,6 +2,8 @@
 
 本仓库发布柴火课程的教学材料与配套Web工具，供教师和学员使用。
 
+**当前公开版本：v0.01** · [GitHub Release](https://github.com/liwlin/seeed/releases/tag/v0.01) · [发布说明](RELEASE_NOTES_v0.01.md)
+
 ## 课程海报
 
 <p align="center">

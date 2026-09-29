@@ -23,29 +23,29 @@ jobs:
           set -euo pipefail
           mkdir -p dist
           zip -r -9 dist/makerseed_twin_v1_10_3_complete.zip web/makerseed_twin_v1_10_3_complete >/dev/null
-          cp "AI碉楼守护者/Part1_认识守护者/教学课件.pptx" dist/Part1_教学课件.pptx
-          cp "AI碉楼守护者/Part1_认识守护者/打印材料/课堂记录单_双面A4.pdf" dist/Part1_课堂记录单_双面A4.pdf
-          cp "AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png" dist/AI碉楼守护者_课程海报.png
-          cp "AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png" dist/Part1_数字孪生网页截图.png
+          cp "AI碉楼守护者/Part1_认识守护者/教学课件.pptx" dist/Part1_Teaching_Slides.pptx
+          cp "AI碉楼守护者/Part1_认识守护者/打印材料/课堂记录单_双面A4.pdf" dist/Part1_Class_Record_A4.pdf
+          cp "AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png" dist/AI_Guardian_Course_Poster.png
+          cp "AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png" dist/Part1_Digital_Twin_Screenshot.png
           (cd dist && sha256sum * > SHA256SUMS.txt)
 
-      - name: Create GitHub Release
+      - name: Create or refresh GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
           if gh release view v0.01 >/dev/null 2>&1; then
-            echo "Release v0.01 already exists; nothing to do."
-            exit 0
+            gh release edit v0.01 \
+              --title "v0.01 · AI碉楼守护者 Part 1 数字孪生实验室" \
+              --notes-file RELEASE_NOTES_v0.01.md
+            for old in "AI._.png" "Part1_.png" "Part1_.pptx" "Part1_._.A4.pdf"; do
+              gh release delete-asset v0.01 "$old" --yes >/dev/null 2>&1 || true
+            done
+          else
+            gh release create v0.01 \
+              --target main \
+              --title "v0.01 · AI碉楼守护者 Part 1 数字孪生实验室" \
+              --notes-file RELEASE_NOTES_v0.01.md
           fi
-          gh release create v0.01 \
-            --target main \
-            --title "v0.01 · AI碉楼守护者 Part 1 数字孪生实验室" \
-            --notes-file RELEASE_NOTES_v0.01.md \
-            dist/makerseed_twin_v1_10_3_complete.zip \
-            dist/Part1_教学课件.pptx \
-            dist/Part1_课堂记录单_双面A4.pdf \
-            dist/AI碉楼守护者_课程海报.png \
-            dist/Part1_数字孪生网页截图.png \
-            dist/SHA256SUMS.txt
+          gh release upload v0.01 dist/* --clobber
