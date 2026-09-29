@@ -1,0 +1,51 @@
+name: Publish v0.01 release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/release/v0.01"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.repository == 'liwlin/seeed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public release snapshot
+        uses: actions/checkout@v4
+
+      - name: Build release assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          zip -r -9 dist/makerseed_twin_v1_10_3_complete.zip web/makerseed_twin_v1_10_3_complete >/dev/null
+          cp "AI碉楼守护者/Part1_认识守护者/教学课件.pptx" dist/Part1_教学课件.pptx
+          cp "AI碉楼守护者/Part1_认识守护者/打印材料/课堂记录单_双面A4.pdf" dist/Part1_课堂记录单_双面A4.pdf
+          cp "AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png" dist/AI碉楼守护者_课程海报.png
+          cp "AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png" dist/Part1_数字孪生网页截图.png
+          (cd dist && sha256sum * > SHA256SUMS.txt)
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v0.01 >/dev/null 2>&1; then
+            echo "Release v0.01 already exists; nothing to do."
+            exit 0
+          fi
+          gh release create v0.01 \
+            --target main \
+            --title "v0.01 · AI碉楼守护者 Part 1 数字孪生实验室" \
+            --notes-file RELEASE_NOTES_v0.01.md \
+            dist/makerseed_twin_v1_10_3_complete.zip \
+            dist/Part1_教学课件.pptx \
+            dist/Part1_课堂记录单_双面A4.pdf \
+            dist/AI碉楼守护者_课程海报.png \
+            dist/Part1_数字孪生网页截图.png \
+            dist/SHA256SUMS.txt
