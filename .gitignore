@@ -1,0 +1,59 @@
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python 本地环境与缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# JavaScript 依赖
+node_modules/
+
+# 本地环境配置（保留示例配置）
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# 运行日志
+*.log
+
+# 本地协作运行状态
+.omx/
+
+# 内部参考资料仅保留本地
+/资料/
+
+# Part2/Part3 草稿留本地，发布版本仅保留目录占位
+/AI碉楼守护者/Part2_建造AI碉楼守护者/*
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/.gitkeep
+/AI碉楼守护者/Part3_守护者训练场/*
+!/AI碉楼守护者/Part3_守护者训练场/.gitkeep
+
+# Web只发布当前稳定版本；升级时明确更新此白名单
+/web/*
+!/web/makerseed_twin_v1_10_3_complete/
+
+# 内部课程开发文档和制作数据仅留本地
+/AI碉楼守护者_V2.1_两日课程详细方案.md
+/AI碉楼守护者/开发记录/
+/AI碉楼守护者/AI协作提示词与模板约束.md
+/AI碉楼守护者/评价量规与作品发布.md
+/AI碉楼守护者/课前准备与开课验收.md
+/AI碉楼守护者/课程总览与两日安排.md
+/AI碉楼守护者/需求覆盖矩阵.md
+/AI碉楼守护者/Part1_认识守护者/PPT策划.md
+/AI碉楼守护者/Part1_认识守护者/课件源数据.json
+/AI碉楼守护者/Part1_认识守护者/PPTX定稿核验.json
+/AI碉楼守护者/Part1_认识守护者/完成计划.md
+/AI碉楼守护者/Part1_认识守护者/交付核验.md
+/AI碉楼守护者/Part1_认识守护者/教学素材/同步课件策划.py
+/AI碉楼守护者/Part1_认识守护者/教学素材/登记素材.py
+/AI碉楼守护者/Part1_认识守护者/教学素材/Web截图/截图清单.json
+/AI碉楼守护者/课件素材/manifest.json
+/AI碉楼守护者/课件素材/imagegen-prompts.json
+/AI碉楼守护者/课件素材/素材说明.md

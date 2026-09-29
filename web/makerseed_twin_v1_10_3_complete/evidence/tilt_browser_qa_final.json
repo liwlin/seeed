@@ -1,0 +1,16 @@
+{
+  "version": "V1.10.3",
+  "axisMap": "model=(sensorY,sensorZ,sensorX)",
+  "canonical": {"zUp":[0,1,0],"xAxis":[0,0,1],"yAxis":[1,0,0]},
+  "samples": [
+    {"name":"IMG_0237","norm":0.934,"residualDeg":0},
+    {"name":"IMG_0238","norm":1.055,"residualDeg":0},
+    {"name":"IMG_0239","norm":1.029,"residualDeg":0},
+    {"name":"IMG_0241","norm":1.057,"residualDeg":0},
+    {"name":"IMG_0242","norm":0.919,"residualDeg":0},
+    {"name":"IMG_0243","norm":1.002,"residualDeg":0}
+  ],
+  "calibrationResidualDeg": 0,
+  "syncOffQuaternion": [0,0,0,1],
+  "note": "Three.js quaternion math replay; full derivation is in tilt_algorithm_validation.md."
+}

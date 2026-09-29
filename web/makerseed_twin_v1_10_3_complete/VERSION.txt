@@ -1,0 +1,5 @@
+MakerSeed Grove Beginner Kit Digital Twin
+Release: V1.10.3
+Web UI / tilt algorithm: V1.10.3
+Twin Bridge protocol/firmware: V1.10.2 (unchanged, compatible)
+Date: 2026-09-29

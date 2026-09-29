@@ -1,0 +1,22 @@
+{
+  "title": "AI 碉楼守护者 · 数字孪生实验室",
+  "webgl_ready": false,
+  "console_errors": [
+    "error: THREE.WebGLRenderer: Error creating WebGL context.",
+    "error: Error: Error creating WebGL context.\n    at new aa (<anonymous>:6:370507)\n    at init (<anonymous>:157:77)\n    at <anonymous>:182:46\n    at <anonymous>:183:3"
+  ],
+  "temperature_range_count": 0,
+  "temperature_text_has_live": true,
+  "pressure_range_count": 0,
+  "pressure_text": "感知 / INPUT\n气压传感器\n\nBMP280 · I²C\n\n当前真机读数\nLIVE DEVICE\n1006.72\nhPa\n工作原理\n\n新版套件使用 SPA06-003，旧版使用 BMP280。两者都利用 MEMS 压力结构感知大气压力，再经过芯片内部补偿与数字转换，通过 I²C 交给主控。Twin Bridge 会读取芯片 ID 自动选择驱动。\n\n大气压力\n→\nMEMS 压力结构\n→\n温度补偿/ADC\n→\nI²C 数据\n信号类型\n数字量\n板上接口\nI²C · 0x77\n核心器件 / 结构\nBMP280 气压传感器\n怎么观察它？\n\n连接真机后实时读取实际气压，并显示独立更新计数；没有检测到传感器时不显示仿真假数据。\n\nLIVE · BMP280\n当前气压 1006.72 hPa。\n更新 #12 · 刚刚\n\n当前模块已接入真实开发板。\n\n知识边界：气压变化通常较慢；“数值看起来不变”不等于没有采样，因此网页额外显示真实更新计数。",
+  "accel_default_checked": false,
+  "accel_label_has_tilt": true,
+  "accel_calibrate_controls": [1,1],
+  "rotation_before": {"x": -0.0,"z": -0.0},
+  "rotation_after": {"x": -0.4336072140065127,"z": -0.1810504616123952},
+  "oled_total_lines": 67,
+  "oled_tile_lines": 65,
+  "oled_unique_tiles": 64,
+  "oled_retry_seq17": 2,
+  "oled_nonzero_bitmap": true
+}
