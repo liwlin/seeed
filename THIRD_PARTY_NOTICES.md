@@ -83,6 +83,8 @@ Part2 单文件 HTML 内嵌了课程 V0.4 内容包中的场景图、地图和 M
 - SVG 教学接线图为本项目绘制，参考 [Fritzing Breadboard View 的表达方式](https://fritzing.org/learning/tutorials/building-circuit)，没有嵌入 Fritzing 程序或零件库。
 - README 中的 Part2 图片是该网页的真实界面截图；提示词示例、教师模式图示与课程插画不构成真实课堂或设备运行证据。
 
+Part2 V1.0公开的PPT与教学配图沿用上述课程场景、官方识别照片、旧版布局参考及本项目SVG接线图。场景图用于概念教学，不是真实学生课堂照片；接线图是整板预连接的等效展开。具体素材类型与来源见 `AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/素材说明.md`。第三方照片、产品标识及商标继续保留原权利，不因课程或软件许可被重新许可。
+
 ## 商标说明
 
 Seeed、Grove、Arduino、Three.js、U8g2、柴火创客学园 / Chaihuo Maker Academy 等名称与标识属于各自权利人。引用仅用于说明兼容性、来源或依赖，不代表赞助、认可或官方合作关系。
