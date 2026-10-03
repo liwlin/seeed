@@ -49,9 +49,14 @@ node_modules/
 
 # Web发布Part1稳定版与Part2网页预览；升级时明确更新白名单
 /web/*
-!/web/makerseed_twin_v1_10_3_complete/
-!/web/Part2_AI_Guardian_MissionCenter_V0.4.html
-!/web/Part2_AI_Guardian_MissionCenter_V0.4_说明.md
+!/web/part1/
+/web/part1/*
+!/web/part1/README.md
+!/web/part1/makerseed_twin_v1_10_3_complete/
+!/web/part2/
+/web/part2/*
+!/web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html
+!/web/part2/README.md
 
 # 内部课程开发文档和制作数据仅留本地
 /AI碉楼守护者_V2.1_两日课程详细方案.md

@@ -161,9 +161,9 @@ OEND → ACK
 - MakerSeed 自研 Web / 测试脚本：MIT
 - Arduino Twin Bridge：GPL-3.0-only
 - 课程内容与说明文档：CC BY 4.0
-- 根许可：[../../LICENSE.md](../../LICENSE.md)
-- 课程来源：[../../ATTRIBUTION.md](../../ATTRIBUTION.md)
-- 第三方依赖：[../../THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)
+- 根许可：[../../../LICENSE.md](../../../LICENSE.md)
+- 课程来源：[../../../ATTRIBUTION.md](../../../ATTRIBUTION.md)
+- 第三方依赖：[../../../THIRD_PARTY_NOTICES.md](../../../THIRD_PARTY_NOTICES.md)
 
 ## 测试边界
 

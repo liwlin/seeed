@@ -16,7 +16,7 @@
 
 点选十个硬件模块，认识位置、原理与状态；连接真板后观察真实输入、反控实体输出，并理解加速度与倾斜的对应关系。
 
-截图为`SIM · 未连接真机`界面，不作为实板验收结果。[稳定版启动说明](../web/makerseed_twin_v1_10_3_complete/README.md) · [下载截图原图](课程海报/Part1_数字孪生网页截图.png)
+截图为`SIM · 未连接真机`界面，不作为实板验收结果。[稳定版启动说明](../web/part1/makerseed_twin_v1_10_3_complete/README.md) · [下载截图原图](课程海报/Part1_数字孪生网页截图.png)
 
 ## Part2 Mission Center 网页预览
 
@@ -24,7 +24,7 @@
 
 以任务操作区为主线，提供三章十关、可直接切换的七步引导、可编辑 Prompt、先评分后按需润色，以及按勾选实时生成的多元件接线图。主板保持居中和固定比例，默认完整显示。
 
-[Part2 入口与截图](Part2_建造AI碉楼守护者/README.md) · [单文件网页](../web/Part2_AI_Guardian_MissionCenter_V0.4.html) · [使用说明](../web/Part2_AI_Guardian_MissionCenter_V0.4_说明.md)
+[Part2 入口与截图](Part2_建造AI碉楼守护者/README.md) · [单文件网页](../web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html) · [使用说明](../web/part2/README.md)
 
 Mission Center 不连接开发板。学员通过 CodeCraft 生成、编译和烧录程序，再记录真板结果。AI评分评价提示词表达，不能代替硬件验证。
 
@@ -51,7 +51,7 @@ Part2 仅公开此处列出的网页入口、截图和接口参考；完整讲�
 - [教师讲义](Part1_认识守护者/教师讲义.md)、[学员任务册](Part1_认识守护者/学员任务册.md)
 - [18页教学课件](Part1_认识守护者/教学课件.pptx)
 - [两页A4记录单](Part1_认识守护者/打印材料/课堂记录单_双面A4.pdf)
-- [Web V1.10.3说明](../web/makerseed_twin_v1_10_3_complete/README.md)
+- [Web V1.10.3说明](../web/part1/makerseed_twin_v1_10_3_complete/README.md)
 
 正式授课前按教师讲义核对真板输入、实体输出与设备交接。网页截图和课程文档不能代替实板验收。
 

@@ -20,12 +20,12 @@
 
 截图由课程作者提供，画面处于`SIM · 未连接真机`状态。海报中的电脑画面是情境设计；上图展示课程实际网页，两者不作为实板验收结果。
 
-[下载截图原图](AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png) · [稳定版工具与启动说明](web/makerseed_twin_v1_10_3_complete/README.md) · [网页源码](web/makerseed_twin_v1_10_3_complete/standalone.html)
+[下载截图原图](AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png) · [稳定版工具与启动说明](web/part1/makerseed_twin_v1_10_3_complete/README.md) · [网页源码](web/part1/makerseed_twin_v1_10_3_complete/standalone.html)
 
 ## Part 1：5 分钟开始
 
 1. 准备一块 Grove Beginner Kit for Arduino；已烧录 V1.10.2 Twin Bridge 的板子可直接使用。
-2. 新板烧录 `web/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`。
+2. 新板烧录 `web/part1/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`。
 3. 关闭 Arduino 串口监视器，双击 `start_server.bat`。
 4. 使用桌面 Chrome / Edge 打开 `http://127.0.0.1:8080/standalone.html`。
 5. 点击“连接真实开发板”，选择对应 COM 口，先验证一项真实输入，再验证一个实体输出。
@@ -61,9 +61,9 @@
 
 </details>
 
-[Part2 入口与课程结构](AI碉楼守护者/Part2_建造AI碉楼守护者/README.md) · [单文件网页](web/Part2_AI_Guardian_MissionCenter_V0.4.html) · [使用说明](web/Part2_AI_Guardian_MissionCenter_V0.4_说明.md) · [接口与引脚参考](AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/硬件图/传感器接口与引脚说明.md)
+[Part2 入口与课程结构](AI碉楼守护者/Part2_建造AI碉楼守护者/README.md) · [单文件网页](web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html) · [使用说明](web/part2/README.md) · [接口与引脚参考](AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/硬件图/传感器接口与引脚说明.md)
 
-下载仓库后，用桌面 Chrome / Edge 打开 `web/Part2_AI_Guardian_MissionCenter_V0.4.html` 即可；图片与脚本已内嵌。GitHub 文件页用于查看或下载源码，不直接运行 HTML。
+下载仓库后，用桌面 Chrome / Edge 打开 `web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html` 即可；图片与脚本已内嵌。GitHub 文件页用于查看或下载源码，不直接运行 HTML。
 
 **Part2 网页不连接硬件、不编译、不烧录。** 真实程序与开发板由 CodeCraft 负责。LLM 评分与润色需要自行配置兼容接口；API Key 仅保留在本次页面会话。网页已做交互、布局和模拟 API 流程检查，真实模型调用、CodeCraft 烧录与课堂硬件验证仍需在实际环境完成。
 
@@ -88,7 +88,7 @@ Web实时交互重新回来。课程方预制Controller Lab、Game Engine和4个
 - [Part 1课程入口](AI碉楼守护者/Part1_认识守护者/README.md)
 - [教学PPTX](AI碉楼守护者/Part1_认识守护者/教学课件.pptx)
 - [两页A4打印记录单](AI碉楼守护者/Part1_认识守护者/打印材料/课堂记录单_双面A4.pdf)
-- [V1.10.3 Web工具说明](web/makerseed_twin_v1_10_3_complete/README.md)，含网页、配套固件、启动脚本、自动测试与姿态算法验证。
+- [V1.10.3 Web工具说明](web/part1/makerseed_twin_v1_10_3_complete/README.md)，含网页、配套固件、启动脚本、自动测试与姿态算法验证。
 
 Web工具请下载或克隆到本地，按随包说明运行 `start_server.bat`，再用桌面 Chrome / Edge 打开本地页面。GitHub文件预览用于阅读源码，不是课程交互网页的运行入口。网页与固件须使用兼容版本；课程截图不能代替真实板课堂验收。
 
@@ -107,9 +107,10 @@ V1.10.3 是当前稳定版工具。实际课堂需核对真实输入、实体输
 ## 仓库内容
 
 - [AI 碉楼守护者课程](AI碉楼守护者/README.md)：公开 Part1 课程与 Part2 网页预览入口；Part3 保留目录占位。
-- `web/makerseed_twin_v1_10_3_complete/`：当前 Part 1 数字孪生稳定基线，课程优先使用此版本。
+- [web/part1/](web/part1/README.md)：Part1 数字孪生稳定项目、固件和启动脚本。
+- [web/part2/](web/part2/README.md)：Part2 Mission Center 单文件网页与使用说明。
 
-`web/` 公开 Part1 稳定版 `makerseed_twin_v1_10_3_complete/`，以及 Part2 单文件网页与使用说明。旧版本目录与 ZIP 不纳入当前发布。
+`web/` 按 `part1/`、`part2/` 分别管理两个网页项目。旧版本目录与 ZIP 不纳入当前发布。
 
 Part2 完整讲义、PPT、制作数据等课程草稿继续保留本地；此次仅发布网页、使用入口、截图及接口参考。Part3、内部开发记录与参考资料继续排除。
 

@@ -26,9 +26,9 @@
 
 以下由本项目新增的代码采用 **MIT License**，第三方嵌入代码除外：
 
-- `web/makerseed_twin_v1_10_3_complete/standalone.html` 中 MakerSeed 自研部分；
-- `web/makerseed_twin_v1_10_3_complete/tests/`；
-- `web/Part2_AI_Guardian_MissionCenter_V0.4.html` 中项目原创的任务交互、提示词教练和 SVG 接线图代码；
+- `web/part1/makerseed_twin_v1_10_3_complete/standalone.html` 中 MakerSeed 自研部分；
+- `web/part1/makerseed_twin_v1_10_3_complete/tests/`；
+- `web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html` 中项目原创的任务交互、提示词教练和 SVG 接线图代码；
 - `start_server.bat`、`start_server.ps1`；
 - 其他明确标注为 MIT 的项目代码。
 
@@ -40,8 +40,8 @@
 
 以下固件采用 **GNU General Public License v3.0 only（GPL-3.0-only）**：
 
-- `web/makerseed_twin_v1_10_3_complete/AI_Guardian_TwinBridge_V1_10_2_Full.ino`
-- `web/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`
+- `web/part1/makerseed_twin_v1_10_3_complete/AI_Guardian_TwinBridge_V1_10_2_Full.ino`
+- `web/part1/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`
 
 原因：当前固件依赖 Seeed Studio 的 `Seeed_Arduino_SPA06`，其上游仓库采用 GPL-3.0。为避免对下游造成错误的“全部 MIT”预期，本仓库将当前完整 Bridge 固件按 GPL-3.0-only 发布。
 

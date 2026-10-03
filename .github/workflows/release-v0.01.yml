@@ -22,7 +22,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist
-          zip -r -9 dist/makerseed_twin_v1_10_3_complete.zip web/makerseed_twin_v1_10_3_complete >/dev/null
+          zip -r -9 dist/makerseed_twin_v1_10_3_complete.zip web/part1/makerseed_twin_v1_10_3_complete >/dev/null
           cp "AI碉楼守护者/Part1_认识守护者/教学课件.pptx" dist/Part1_Teaching_Slides.pptx
           cp "AI碉楼守护者/Part1_认识守护者/打印材料/课堂记录单_双面A4.pdf" dist/Part1_Class_Record_A4.pdf
           cp "AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png" dist/AI_Guardian_Course_Poster.png

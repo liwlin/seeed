@@ -2,7 +2,7 @@
 
 **75分钟：碉楼故事与三格图20分钟，Web数字孪生探索55分钟。** 两人一组，先提出一个守护需要，再用真板认识十个硬件伙伴。本部分不讲编程。
 
-课程主体使用 [V1.10.3 Web数字孪生工具](../../web/makerseed_twin_v1_10_3_complete/standalone.html)。老师按随包说明启动本地网页并连接真实 Grove Beginner Kit。网页与 Bridge 的完整运行、依赖、版本关系与测试边界见 [V1.10.3 README](../../web/makerseed_twin_v1_10_3_complete/README.md)。
+课程主体使用 [V1.10.3 Web数字孪生工具](../../web/part1/makerseed_twin_v1_10_3_complete/standalone.html)。老师按随包说明启动本地网页并连接真实 Grove Beginner Kit。网页与 Bridge 的完整运行、依赖、版本关系与测试边界见 [V1.10.3 README](../../web/part1/makerseed_twin_v1_10_3_complete/README.md)。
 
 V1.10.3 的 Part 1 原则：输入类模块以真机数据为证据；LED、蜂鸣器、OLED 可由网页反控实体硬件；温湿度与气压不提供伪造滑条；LIS3DHTR 显示真实 XYZ，并可由学员主动打开“同步实体倾斜姿态”观察 3D 板随重力方向变化。姿态同步默认关闭，三轴加速度计不能单独确定 Yaw / 航向。
 

@@ -2,11 +2,11 @@
 
 这是 **Mission Center 网页预览版**：通过碉楼故事和三章十关，引导学员表达需求、用 CodeCraft AI 编程、在真板上验证，再根据实际结果修改。
 
-[下载单文件网页](../../web/Part2_AI_Guardian_MissionCenter_V0.4.html) · [完整使用说明](../../web/Part2_AI_Guardian_MissionCenter_V0.4_说明.md) · [接口与引脚参考](教学素材/硬件图/传感器接口与引脚说明.md)
+[下载单文件网页](../../web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html) · [完整使用说明](../../web/part2/README.md) · [接口与引脚参考](教学素材/硬件图/传感器接口与引脚说明.md)
 
 ## 快速开始
 
-1. 下载仓库，在桌面 Chrome / Edge 中打开 `web/Part2_AI_Guardian_MissionCenter_V0.4.html`。图片与脚本均已内嵌，无需安装依赖。
+1. 下载仓库，在桌面 Chrome / Edge 中打开 `web/part2/Part2_AI_Guardian_MissionCenter_V0.4.html`。图片与脚本均已内嵌，无需安装依赖。
 2. 在“学习设置”确认板卡版本，从 M01 开始。每关七个步骤都可直接点击切换。
 3. 写出自己的 Prompt，核对硬件、规则和验证方式。需要 AI 评分与润色时，再在顶部“LLM API 设置”填写兼容接口、模型和 Key。
 4. 将提示词交给 CodeCraft AI 生成程序、编译、烧录，记录真实结果和 V2 复测。

@@ -1,5 +1,7 @@
 # v0.01 Release Notes
 
+> 目录说明：当前主分支已按 `web/part1/`、`web/part2/` 归档。既有 v0.01 Release 压缩包保持发布时的目录结构；使用旧压缩包时，运行包内的 `start_server.bat` 即可。
+
 **AI 碉楼守护者 · Part 1 首个公开预发布版本**
 
 本 Release 面向教师、创客空间和希望复用课程的开发者，发布当前已完成并经真机迭代的 Part 1：数字孪生实验室。
@@ -31,7 +33,7 @@
 ## 快速开始
 
 1. 准备 Grove Beginner Kit for Arduino。
-2. 新开发板烧录 `web/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`。
+2. 新开发板烧录 `web/part1/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`。
 3. 关闭 Arduino 串口监视器。
 4. 双击 `start_server.bat`。
 5. 使用桌面 Chrome / Edge 打开 `http://127.0.0.1:8080/standalone.html`。
