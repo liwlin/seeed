@@ -32,7 +32,7 @@ Mission Center 不连接开发板。学员通过 CodeCraft 生成、编译和烧
 
 **Part 1：数字孪生实验室**——真实硬件 ⇄ Web 实时交互，认识全部硬件；3D 板卡用于空间定位，输入以真板操作为证据、输出反控实物；LIS3DHTR 显示真实 XYZ，并可选择将实体板的重力倾斜同步到整块 3D 板卡。
 
-**Part 2：CodeCraft AI 编程主线**——Mission Center只提供碉楼故事、任务和要求，不连接硬件；学员通过CodeCraft AI完成OLED、LED、蜂鸣器、光线、声音、按键、旋钮、温湿度、气压、加速度等编程学习。
+**Part 2：CodeCraft AI 编程主线**——Mission Center V0.4 是任务与提示词学习工作台，以三章十关、七步引导组织硬件编程学习。学员先写 Prompt，查看六项评分，再自行改进或按需 AI 润色，比较并手动采用，随后通过 CodeCraft 生成、编译、烧录并做真板验证与 V2 复测。网页还按勾选实时展示所有模块和接线，主板居中、元件自适应排布、默认完整显示；M10 要求学员自主设计系统需求。Mission Center 不连接硬件。
 
 **Part 3：守护者训练场**——Web实时交互重新回来；课程方预制Controller Lab、Game Engine和4个游戏场景，学员负责设计实体硬件控制器和游戏规则。
 
