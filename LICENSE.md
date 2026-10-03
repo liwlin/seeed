@@ -28,6 +28,7 @@
 
 - `web/makerseed_twin_v1_10_3_complete/standalone.html` 中 MakerSeed 自研部分；
 - `web/makerseed_twin_v1_10_3_complete/tests/`；
+- `web/Part2_AI_Guardian_MissionCenter_V0.4.html` 中项目原创的任务交互、提示词教练和 SVG 接线图代码；
 - `start_server.bat`、`start_server.ps1`；
 - 其他明确标注为 MIT 的项目代码。
 

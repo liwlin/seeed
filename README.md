@@ -2,7 +2,7 @@
 
 本仓库发布柴火课程的教学材料与配套Web工具，供教师和学员使用。
 
-**当前公开版本：v0.01** · [GitHub Release](https://github.com/liwlin/seeed/releases/tag/v0.01) · [发布说明](RELEASE_NOTES_v0.01.md)
+**Part1 当前正式发布：v0.01** · [GitHub Release](https://github.com/liwlin/seeed/releases/tag/v0.01) · [发布说明](RELEASE_NOTES_v0.01.md)
 
 ## 课程海报
 
@@ -10,7 +10,7 @@
   <img src="AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png" alt="AI碉楼守护者课程全景海报" width="680">
 </p>
 
-[下载海报原图](AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png)。海报呈现三阶段课程全景；当前发布Part1，Part2与Part3仍在开发中。
+[下载海报原图](AI碉楼守护者/课程海报/AI碉楼守护者_课程海报.png)。海报呈现三阶段课程全景；当前公开 Part1 教学材料与稳定工具，以及 Part2 Mission Center V0.4 网页预览；Part3 仍在开发中。
 
 ## Part 1 特色工具：数字孪生网页
 
@@ -22,7 +22,7 @@
 
 [下载截图原图](AI碉楼守护者/课程海报/Part1_数字孪生网页截图.png) · [稳定版工具与启动说明](web/makerseed_twin_v1_10_3_complete/README.md) · [网页源码](web/makerseed_twin_v1_10_3_complete/standalone.html)
 
-## 5 分钟开始
+## Part 1：5 分钟开始
 
 1. 准备一块 Grove Beginner Kit for Arduino；已烧录 V1.10.2 Twin Bridge 的板子可直接使用。
 2. 新板烧录 `web/makerseed_twin_v1_10_3_complete/firmware/AI_Guardian_TwinBridge_V1_10_2_Full.ino`。
@@ -32,13 +32,48 @@
 
 没有开发板时仍可浏览 3D 模型和硬件工作原理；**真实输入、环境传感器和实体输出验收必须使用真板**。
 
+## Part 2 特色工具：Mission Center V0.4
+
+**任务引导 → 学员写 Prompt → 先评分、再按需润色 → CodeCraft 编程 → 真板验证 → V2 复测。**
+
+![Part2 Mission Center 任务引导界面](AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/01_任务引导.png)
+
+- **三章十关、七步引导**：故事、任务目标、作品预期和具体动作在主区展示，地图辅助查看进度；七个步骤可直接点击切换。
+- **提示词学习**：可编辑草稿，配置 LLM API 后按六项标准评分，再按需润色；比较修改原因并手动采用。M10 由学员独立写出完整系统需求。
+- **实时硬件图**：勾选哪些模块，就用 JavaScript + SVG 同时绘出哪些元件和连线。主板保持比例并居中，元件自动环绕排布；默认完整显示，可切换原尺寸、放大或下载 SVG。
+- **接口说明**：区分数字 IO、模拟 ADC、I²C 与 DHT11 单线时序，按板卡版本切换 DHT11 / DHT20；明确 USB 上传调试与传感器接口的区别。
+
+<details>
+<summary>查看提示词学习界面</summary>
+
+![Part2 可编辑提示词、评分与AI润色入口](AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/02_提示词学习.png)
+
+先评价自己的表达，再决定是否借助 AI 润色。截图为未配置 API 的真实界面，没有展示虚构评分。
+
+</details>
+
+<details>
+<summary>查看多元件实时接线界面</summary>
+
+![Part2 主板居中、十模块同时显示的接线图](AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/03_实时接线图.png)
+
+教师模式演示十个模块的图示选择。图片是板内连接的等效展开；完整 Grove 套件课堂只需接 USB。
+
+</details>
+
+[Part2 入口与课程结构](AI碉楼守护者/Part2_建造AI碉楼守护者/README.md) · [单文件网页](web/Part2_AI_Guardian_MissionCenter_V0.4.html) · [使用说明](web/Part2_AI_Guardian_MissionCenter_V0.4_说明.md) · [接口与引脚参考](AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/硬件图/传感器接口与引脚说明.md)
+
+下载仓库后，用桌面 Chrome / Edge 打开 `web/Part2_AI_Guardian_MissionCenter_V0.4.html` 即可；图片与脚本已内嵌。GitHub 文件页用于查看或下载源码，不直接运行 HTML。
+
+**Part2 网页不连接硬件、不编译、不烧录。** 真实程序与开发板由 CodeCraft 负责。LLM 评分与润色需要自行配置兼容接口；API Key 仅保留在本次页面会话。网页已做交互、布局和模拟 API 流程检查，真实模型调用、CodeCraft 烧录与课堂硬件验证仍需在实际环境完成。
+
 ## 三部分课程架构
 
 ### Part 1：数字孪生实验室（已经完成）
 
 真实硬件 ⇄ Web 实时交互，认识全部硬件。3D 仿真板卡中，输入以真板操作为证据，输出由网页反控实物；LIS3DHTR 持续显示真实 XYZ，并可选择把**实体板的重力倾斜同步到整块 3D 板卡**。该功能只表示倾斜，不宣称 Yaw 航向跟踪。
 
-### Part 2：CodeCraft AI 编程主线（开发中...）
+### Part 2：CodeCraft AI 编程主线（网页预览版 V0.4 已公开）
 
 Mission Center只提供碉楼故事、任务和要求，不连接硬件。学员通过CodeCraft AI完成OLED、LED、蜂鸣器、光线、声音、按键、旋钮、温湿度、气压、加速度等编程学习。
 
@@ -71,10 +106,10 @@ V1.10.3 是当前稳定版工具。实际课堂需核对真实输入、实体输
 
 ## 仓库内容
 
-- [AI 碉楼守护者课程](AI碉楼守护者/README.md)：当前发布 Part1 课程；Part2、Part3 仅保留空目录占位。
+- [AI 碉楼守护者课程](AI碉楼守护者/README.md)：公开 Part1 课程与 Part2 网页预览入口；Part3 保留目录占位。
 - `web/makerseed_twin_v1_10_3_complete/`：当前 Part 1 数字孪生稳定基线，课程优先使用此版本。
 
-`web/`仅保留当前稳定版`makerseed_twin_v1_10_3_complete`。旧版本目录与ZIP不纳入当前发布。
+`web/` 公开 Part1 稳定版 `makerseed_twin_v1_10_3_complete/`，以及 Part2 单文件网页与使用说明。旧版本目录与 ZIP 不纳入当前发布。
 
-Part2、Part3尚未完善，GitHub当前版本只保留`.gitkeep`占位。草稿在本地保留并被忽略，不纳入课程发布。
+Part2 完整讲义、PPT、制作数据等课程草稿继续保留本地；此次仅发布网页、使用入口、截图及接口参考。Part3、内部开发记录与参考资料继续排除。
 

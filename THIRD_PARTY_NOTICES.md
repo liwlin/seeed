@@ -74,6 +74,15 @@ U8g2 仓库中的字体可能采用不同许可。当前固件通过 U8x8 使用
 
 Twin Bridge 面向 Arduino-compatible / Seeeduino Lotus 环境编译。Arduino IDE、Arduino AVR Core 和工具链属于外部依赖，本仓库不重新分发这些项目本身；请以 Arduino 官方仓库和发行包中的许可为准。
 
+## 10. Part2 Mission Center 的图像与参考
+
+Part2 单文件 HTML 内嵌了课程 V0.4 内容包中的场景图、地图和 MakerSeed 标识，以及 Seeed 官方新版实物照片与旧版硬件布局参考。软件代码许可不将这些第三方照片、产品标识或商标重新许可。
+
+- 硬件照片与版本参考：[Grove Beginner Kit 官方资料](https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/)。
+- 旧版布局图：[Seeed Parts.jpg](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/img/Parts.jpg)，它是布局示意，不是实物照片。
+- SVG 教学接线图为本项目绘制，参考 [Fritzing Breadboard View 的表达方式](https://fritzing.org/learning/tutorials/building-circuit)，没有嵌入 Fritzing 程序或零件库。
+- README 中的 Part2 图片是该网页的真实界面截图；提示词示例、教师模式图示与课程插画不构成真实课堂或设备运行证据。
+
 ## 商标说明
 
 Seeed、Grove、Arduino、Three.js、U8g2、柴火创客学园 / Chaihuo Maker Academy 等名称与标识属于各自权利人。引用仅用于说明兼容性、来源或依赖，不代表赞助、认可或官方合作关系。

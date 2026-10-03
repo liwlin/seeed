@@ -28,15 +28,30 @@ node_modules/
 # 内部参考资料仅保留本地
 /资料/
 
-# Part2/Part3 草稿留本地，发布版本仅保留目录占位
+# Part2 仅发布网页入口、截图和接口参考；课程草稿留本地
 /AI碉楼守护者/Part2_建造AI碉楼守护者/*
 !/AI碉楼守护者/Part2_建造AI碉楼守护者/.gitkeep
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/README.md
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/
+/AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/*
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/01_任务引导.png
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/02_提示词学习.png
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/网页截图/03_实时接线图.png
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/
+/AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/*
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/硬件图/
+/AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/硬件图/*
+!/AI碉楼守护者/Part2_建造AI碉楼守护者/教学素材/硬件图/传感器接口与引脚说明.md
+
+# Part3 尚未发布，仅保留目录占位
 /AI碉楼守护者/Part3_守护者训练场/*
 !/AI碉楼守护者/Part3_守护者训练场/.gitkeep
 
-# Web只发布当前稳定版本；升级时明确更新此白名单
+# Web发布Part1稳定版与Part2网页预览；升级时明确更新白名单
 /web/*
 !/web/makerseed_twin_v1_10_3_complete/
+!/web/Part2_AI_Guardian_MissionCenter_V0.4.html
+!/web/Part2_AI_Guardian_MissionCenter_V0.4_说明.md
 
 # 内部课程开发文档和制作数据仅留本地
 /AI碉楼守护者_V2.1_两日课程详细方案.md
